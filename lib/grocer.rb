@@ -1,9 +1,20 @@
-def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
-  #
-  # Consult README for inputs and outputs
+require "pry"
 
+def find_item_by_name_in_collection(name, collection)
+collected_info = {}
+collection.each do |item, name|
+ binding.pry
+  item.each do |name|
+    if name == name
+      return collection[:item][name]
+    end
+  end
 end
+end
+
+
+
+
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
